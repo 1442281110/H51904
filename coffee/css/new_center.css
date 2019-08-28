@@ -1,0 +1,177 @@
+body,p,ul,li,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display:block;
+}
+/*头部*/
+
+header .head{
+	padding:0 46px;
+	width:1108px;
+	margin:0 auto;
+	overflow: hidden;
+}
+header .head img{
+	float:left;
+}
+header .head ul{
+	float:right;
+	overflow: hidden;
+}
+header .head ul li{
+	float:left;
+	width:122px;
+	text-align:center;
+	margin-top:33px;
+	font-size:20px;
+	line-height:1;
+}
+header .head ul li a{
+	color:#333;
+}
+header .head ul li:hover a{
+	color:#866961;
+}
+header .head ul li:hover{
+	border-bottom:6px solid #866961;
+	padding-bottom:21px;
+}
+.banner{
+	overflow: hidden;
+	position:relative;
+}
+.banner img{
+	width:100%;
+	transform: scale(1);
+	transition:all 1s;
+	
+}
+.banner:hover img{
+	
+	transform: scale(1.2);
+}
+.banner .model{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.5);
+	opacity: 0;
+	transition:all 1s;
+}
+.banner:hover .model{
+	opacity: 1;
+}
+.banner .article{
+	position:absolute;
+	width:680px;
+	height:70px;
+	top:50%;
+	left:50%;
+	margin-left:-340px;
+	margin-top:-35px;
+	opacity: 0;
+	transition:all 1s;
+	
+}
+.banner:hover .article{
+	opacity: 1;
+}
+.banner .article p{
+	font-size:30px;
+	color:#ffffff;
+}
+.banner .article p:nth-of-type(1){
+	text-align:right;
+}
+.banner .article p span{
+	display:inline-block;
+	width:280px;
+	height:1px;
+	background:#ffffff;
+}
+.content{
+	width:1000px;
+	margin:0 auto;
+	padding:40px 100px;
+}
+.content h2{
+	font-size:16px;
+	color:#333333;
+}
+.content h2 span{
+	display:inline-block;
+	width:2px;
+	height:9px;
+	background:#866961;
+	margin-right:7px;
+}
+.content .head{
+	overflow: hidden;
+	border-bottom:1px solid #999999;
+	padding-bottom:5px;
+}
+.content .head h3{
+	float:left;
+	font-size:12px;
+	color:#999999;
+}
+.content .head p{
+	float:right;
+	font-size:14px;
+	color:#333333;
+}
+.content .head p span:nth-of-type(2),.content .head p span:nth-of-type(3){
+	color:#999999;
+}
+.article h4{
+	font-size:20px;
+	color:#333333;
+	text-align:center;
+	margin:32px 0 42px 0;
+}
+.article p{
+	margin-top:40px;
+	font-size:14px;
+	color:#666666;
+	line-height:24px;
+	text-align:justify;
+	text-indent:2em;
+}
+.article p:nth-of-type(1){
+	text-indent:0;
+	margin:0 0 26px 0;
+}
+.article img{
+	width:1000px;
+}
+
+footer{
+	background:#866961;
+}
+footer .foot{
+	width:1200px;
+	margin:0 auto;
+	overflow: hidden;
+	height:80px;
+}
+footer .foot p{
+	font-size:14px;
+	float:left;
+	margin-left:78px;
+	padding-top:32px;
+}
+footer .foot img{
+	display:block;
+	float:right;
+	margin-right:245px;
+}

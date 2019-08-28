@@ -1,0 +1,398 @@
+body,p,ul,li,input,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	display:block;
+}
+header,section{
+	margin:0 auto;
+}
+h5{
+	position:relative;
+}
+h5 span{
+	display:inline-block;
+	background:#fff;
+	height:1px;
+	width:8px;
+	transform-origin:right;
+}
+h5 span:nth-of-type(1){
+	left:0px;
+	top:13px;
+	position:absolute;
+	transform:rotate(45deg);
+}
+h5 span:nth-of-type(2){
+	transform:rotate(-45deg);
+}
+h5 span:nth-of-type(3){
+	width:700px;
+}
+/*头部*/
+
+header{
+	width:1200px;
+	display:flex;
+	justify-content: space-between;
+}
+header img{
+	margin:8px 0 15px 0;
+}
+header ul{
+	overflow: hidden;
+}
+header ul li{
+	float:left;
+	margin-left:56px;
+	font-size:18px;
+	line-height:1;
+}
+header ul li a{
+	color:#333333;
+}
+header ul li:hover{
+	padding-bottom:7px;
+	border-bottom:2px solid #830a13;
+}
+header .search{
+	text-align:right;
+	font-size:17px;
+	color:#333333;
+	
+}
+header .search input:nth-of-type(1){
+	border-radius:20px 0 0 20px;
+	outline:none;
+	width:182px;
+	height:23px;
+	border:1px solid #333333;
+	padding-left:10px;
+	margin:15px 0 24px 0;
+	vertical-align: middle;
+}
+header .search input:nth-of-type(2){
+	border-radius:0 20px 20px 0;
+	outline:none;
+	width:36px;
+	height:25px;
+	border:1px solid #333333;
+	margin:15px 36px 24px 0;
+	border-left:0;
+	vertical-align: middle;
+	background:#fff url(../images/search.jpg) no-repeat center center;
+	padding:5px 12px 6px 0;
+}
+header .search span{
+	display:inline-block;
+	cursor:pointer;
+	margin-top:19px;
+}
+
+/*banner*/
+.banner{
+	position:relative;
+}
+.banner img:nth-of-type(n+2){
+	position:absolute;
+	top:0;
+}
+.banner img{
+	width:100%;
+	transition:all 2s;
+	opacity: 0;
+}
+.banner img.active{
+	opacity:1;
+}
+.banner button{
+	position:absolute;
+	width:40px;
+	height:40px;
+	border:2px solid green;
+	border-radius: 50%;
+	outline:none;
+	background:rgba(0,0,0,.4);
+	top:50%;
+	margin-top:-20px;
+	transform:scale(1);
+	transition:all 1s;
+	font-size:25px;
+	color:#fff;
+	cursor:pointer;
+}
+.banner button:nth-of-type(1){
+	right:40px;
+}
+.banner button:nth-of-type(2){
+	left:40px;
+}
+.banner button:hover{
+	background:rgba(0,0,0,7);
+	transform:scale(1.2);
+}
+.banner ul{
+	position:absolute;
+	width:200px;
+	left:50%;
+	margin-left:-50px;
+	bottom:10px;
+}
+.banner ul li{
+	display:inline-block;
+	text-align:center;
+	width:20px;
+	height:20px;
+	border:1px solid gray;
+	border-radius:50%;
+	cursor:pointer;
+	transform:scale(1);
+	transition:all 1s;
+}
+.banner ul li.active{
+	background:red;
+}
+.banner ul li:hover{
+	transform:scale(1.2);
+}
+
+/*内容区*/
+section{
+	overflow: hidden;
+	padding:24px 0;
+	width:1200px;
+}
+section .first{
+	text-align:right;
+	padding-bottom:5px;
+	border-bottom:1px solid #666666;
+	font-size:14px;
+}
+section .first a{
+	color:#333333;
+	transition:all 2s;
+}
+section .first a:nth-of-type(2){
+	color:#666666;
+	display:inline-block;
+	margin:0 8px 0 20px;
+}
+
+section .list p{
+	width:120px;
+	border-bottom:1px solid #666666;
+	padding-bottom:8px;
+	font-size:24px;
+	color:#333333;
+	text-align:center;
+	position:relative;
+}
+section .list p span{
+	display:block;
+	position:absolute;
+	width:1px;
+	background:#666666;
+	
+}
+section .list p span:nth-of-type(1){
+	height:19px;
+	top:0;
+}
+section .list p span:nth-of-type(2){
+	height:23px;
+	bottom:0;
+	right:0;
+}
+section .list p span:nth-of-type(3){
+	height:7px;
+	bottom:-4px;
+	left:0;
+}
+section .lists .left ul{
+	border-left:1px solid #666;
+	padding-left:4px;
+	margin:13px 3px 0 0;
+	
+}
+section .lists .left ul li{
+	margin-bottom:15px;
+	cursor:pointer;
+}
+
+section .lists .left ul li p{
+	display:inline-block;
+}
+
+
+section .lists .left ul li p:nth-of-type(2){
+	margin-left:46px;
+}
+section .lists .left ul li p:nth-of-type(2) span{
+	display:block;
+	width:11px;
+	height:1px;
+	background:#666666;
+}
+section .lists .left ul li p:nth-of-type(2) span:nth-of-type(2){
+	transform:rotate(90deg);
+}
+section .lists .left ul li p:nth-of-type(1){
+	padding-left:6px;
+}
+section .lists .left{
+	float:left;
+}
+section .lists .article{
+	float:right;
+	width:1006px;
+	height:372px;
+	background:#a20a09;
+	position:relative;
+}
+section .lists .article div{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity: 0;
+	transition:all 2s;
+}
+section .lists .article div.active{
+	opacity: 1;
+}
+h2{
+	font-size:18px;
+	color:#fefdfb;
+	margin:22px 0 0 14px;
+	line-height:1;
+}
+h2 span{
+	font-size:12px;
+	margin-left:10px;
+}
+section .lists .article div img{
+	position:absolute;
+	width:311px;
+	height:360px;
+	right:-308px;
+	top:-18px;
+}
+section .lists .article div p{
+	width:650px;
+	padding:30px 11px 0 11px;
+	font-size:14px;
+	line-height:27px;
+	color:#fcffff;
+	text-indent:2em;
+}
+
+
+/*foot*/
+footer{
+	background:#666666;
+}
+footer p{
+	text-align:center;
+	padding:38px 0;
+}
+.picture{
+	overflow: hidden;
+	width:1200px;
+	margin:0 auto;
+	padding-bottom:50px;
+}
+.picture h5 span{
+	background:#666;
+}
+.picture h5 span:nth-of-type(3){
+	width:990px;
+}
+.picture h2{
+	color:#333;
+}
+.picture ul{
+	float:right;
+	width:1006px;
+	overflow: hidden;
+}
+.picture ul li{
+	float:left;
+	margin:30px 20px 0 20px;
+	cursor:pointer;
+	position:relative;
+}
+.boxx{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.5);
+	display:none;
+	opacity:0;
+	transition:all 2s;
+	z-index:15;
+}
+.boxx div{
+	width:800px;
+	height:600px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-400px;
+	margin-top:-300px;
+}
+.boxx div img{
+	width:100%;
+	height:100%;
+	transition:all 2s;
+	
+}
+.boxx div button{
+	position:absolute;
+	top:-25px;
+	right:-25px;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	font-size:30px;
+	transform:rotate(45deg);
+	border-radius:50%;
+	outline:none;
+	cursor:pointer;
+}
+.picture ul li{
+	overflow: hidden;
+}
+.picture ul li div{
+	position:absolute;
+	top:0;
+	left:0;
+	height:50px;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.4);
+	font-size:30px;
+	text-align:center;
+	color:#fff;
+	transition:all 1.5s;
+	opacity: 0;
+	padding-top:100px;
+	z-index:;
+}
+.picture ul li img{
+	transition:all 1.5s;
+}
+.picture ul li:hover img{
+	transform:scale(1.2);
+}
+.picture ul li:hover div{
+	opacity: 1;
+		
+}

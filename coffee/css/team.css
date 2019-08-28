@@ -1,0 +1,242 @@
+body,p,ul,li,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display:block;
+}
+header .head{
+	padding:0 46px;
+	width:1108px;
+	margin:0 auto;
+	overflow: hidden;
+}
+header .head img{
+	float:left;
+}
+header .head ul{
+	float:right;
+	overflow: hidden;
+}
+header .head ul li{
+	float:left;
+	width:122px;
+	text-align:center;
+	margin-top:33px;
+	font-size:20px;
+	line-height:1;
+}
+header .head ul li a{
+	color:#333;
+}
+header .head ul li:hover a{
+	color:#866961;
+}
+header .head ul li:hover{
+	border-bottom:6px solid #866961;
+	padding-bottom:21px;
+}
+.banner img{
+	width:100%;
+}
+
+
+
+.team{
+	padding:0 100px;
+	width:1000px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.team h2 span{
+	margin-right:8px;
+	display:inline-block;
+	height:9px;
+	width:2px;
+	background:#866961;
+}
+.team h2{
+	margin-top:39px;
+	font-size:16px;
+	color:#333333;
+	display:inline-block;
+}
+.team h3{
+	font-size:14px;
+	color:#999999;
+	padding-bottom:6px;
+	;
+}
+.team .pps{
+	float:right;
+	line-height:1;
+}
+.team .pps span{
+	font-size:14px;
+	color:#999999;
+}
+.team .pps a{
+	color:#999999;
+	font-size:14px;
+}
+.teams{
+	border-top:1px solid #d5d5d5;
+	margin:25px 0 36px 0;
+	padding-top:30px;
+	overflow: hidden;
+}
+
+.team-left{
+	float:left;
+	position:relative;
+}
+.team-left img{
+	position:absolute;
+	top:0;
+	width:374px;
+	height:600px;
+	opacity: 0;
+	transition:all 1.5s;
+}
+.team-left img.active{
+	opacity:1;
+}
+.team-right{
+	float:right;
+	width:596px;
+}
+.team-right h4{
+	display:inline-block;
+	font-size:16px;
+	color:#333333;
+}
+.team-right h5{
+	font-size:13px;
+	color:#999999;
+}
+.team .teams .team-right div span{
+	display:inline;
+	font-size:12px;
+	color:#333333;
+	background:#fff;
+}
+.team-right div p{
+	font-size:14px;
+	line-height:24px;
+	color:#999999;
+	text-indent:2em;
+	text-align:justify;
+	margin-top:31px;
+}
+.team-right ul{
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-top:45px;
+}
+.team-right ul li{
+	float:left;
+	cursor: pointer;
+	overflow: hidden;
+	
+}
+
+.team-right ul li img{
+	height:220px;
+	width:144px;
+	transition:all 1.5s;
+}
+.team-right ul li:hover img{
+	transform:scale(1.2);
+}
+.team-right ul li h6{
+	font-size:14px;
+	color:#333333;
+	text-align:center;
+	padding-top:5px;
+	transition:all 1s;
+	float:none;
+}
+.team-right ul li p{
+	display: inline-block;
+	text-indent:0;
+	width:144px;
+	font-size:13px;
+	color:#999999;
+	margin:12px 0 18px 0;
+	text-align:center;
+	transition:all 1s;
+}
+.team-right ul li .team-right-article{
+	height:72px;
+	overflow: hidden;
+	text-align:center;
+}
+.team-right ul li:hover .team-right-article{
+	background:#333333;
+}
+.team-right ul li:hover h6{
+	color:#fff;
+	margin-top:15px;
+}
+.team-right ul li:hover p{
+	color:#999999;
+	margin-top:-5px;
+}
+.team-right{
+	position:relative;
+}
+.team-right .introduce{
+	height:260px;
+	position:relative;
+}
+.team-right .introduce div{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity: 0;
+	transition:all 1.5s;
+}
+.team-right .introduce div.active{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background:#866961;
+}
+footer .foot{
+	width:1200px;
+	margin:0 auto;
+	overflow: hidden;
+	height:80px;
+}
+footer .foot p{
+	font-size:14px;
+	float:left;
+	margin-left:78px;
+	padding-top:32px;
+}
+footer .foot img{
+	display:block;
+	float:right;
+	margin-right:245px;
+}

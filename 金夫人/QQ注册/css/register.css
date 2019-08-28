@@ -1,0 +1,227 @@
+body,ul,li,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+img{
+	vertical-align: middle;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+section{
+	overflow: hidden;
+}
+section .left{
+	top:0;
+	left:0;
+	position:fixed;
+	width:480px;
+}
+section .left p{
+	
+	margin:20px 20px;
+	position:absolute;
+	padding:20px 40px;
+	top:0;
+	font-size:30px;
+	background:url("../img/logo1.png") no-repeat left center;
+	background-size:36px;
+}
+section .right{
+	float:right;
+	width:650px;
+}
+section .left  img{
+	position:absolute;
+	opacity:0;
+	top:0;
+	left:0;
+	width:480px;
+	transition:all 2s;
+}
+button{
+	background:#fff;
+}
+section .left  img.active{
+	opacity: 1;
+}
+.right ul{
+	margin: 30px 60px 0 0;
+	overflow: hidden;
+	color:#999999;
+	
+}
+.right ul>li{
+	margin:0 20px;
+	float:left;
+}
+.right ul li{
+	font-size:14px;
+	line-height:24px;
+	width:100px;
+	text-align:center;
+}
+.right ul li a{
+	color:#999999;
+}
+.right ul li:nth-of-type(1){
+	background:#fc4754;
+	border-radius:5px;
+}
+.right ul>li:nth-of-type(1)>a{
+	padding-left:24px;
+	background:url(../img/logo3.png) no-repeat left center;
+}
+.right ul li:nth-of-type(2) ul{
+	position:absolute;
+	
+}
+.right ul li:nth-of-type(2) span{
+	position:relative;
+	top:8px;
+	display:inline-block;
+	border:7px solid transparent;
+	border-top:7px solid gray;
+	transition:all 1s;
+}
+.right ul li:nth-of-type(2):hover span{
+	border-bottom:7px solid gray;
+	border-top:7px solid transparent;
+	top:0px;
+}
+.right ul li:nth-of-type(2) ul{
+	opacity: 0;
+	transition:all 1s;
+	margin: 0;
+}
+.right ul li:nth-of-type(2):hover ul{
+	opacity: 1;
+}
+.right ul li:nth-of-type(2) ul li{
+	margin:0;
+	padding:0;
+	float:none;
+	margin-top:0;
+	text-align:center;
+}
+.right ul li:nth-of-type(2) ul li a{
+	padding-left:0;
+	display:block;
+	background:#fff;
+}
+.right .last{
+	left:-100px;
+	margin-right:100px;
+}
+.right .last h2{
+	text-align:left;
+	margin:70px 0 10px 0;
+	font-size:44px;
+}
+.right .last h3{
+	font-size:28px;
+}
+.right .last h3 span{
+	color:blue;
+	margin-left:120px;
+}
+.right .list{
+	margin-left:160px;
+}
+.right form{
+	margin-top:70px;
+}
+.right form input{
+	font-size:24px;
+	outline:none;
+	width:400px;
+	height:50px;
+	margin-bottom:20px;
+	border-radius: 3px;
+}
+.right form div:nth-of-type(3) input{
+	width:150px;
+	
+}
+.right form div:nth-of-type(3) p{
+	width:150px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	font-size:30px;
+	display:inline-block;
+	border:1px solid gray;
+	vertical-align: middle;
+	margin-right:100px;
+	cursor:pointer;
+}
+.right form div:nth-of-type(4) input{
+	color:#fff;
+	background:#398bff;
+}
+.right form div:nth-of-type(3) p:nth-of-type(1){
+	background:url(../img/pic3.jpg) no-repeat center center;
+	color:#fff;
+}
+.right form div:nth-of-type(3) p:nth-of-type(3){
+	border:0;
+	display:block;
+	font-size:14px;
+}
+.pwds{
+	display:none;
+	transition:all 2s;
+	opacity: 0;
+}
+.list ul li:nth-of-type(1) .list1{
+	width:250px;
+	height:100px;
+	border:1px solid gray;
+	border-radius: 3px;
+	overflow: hidden;
+	position:absolute;
+	top:23px;
+	left:-169px;
+	background:#fff;
+	opacity: 0;
+	transition:all 2s;
+}
+.list ul li:nth-of-type(1):hover .list1{
+	opacity:1;
+}
+.list ul li:nth-of-type(1) .list1 input{
+	border-top:0;
+	width:100%;
+	float:left;
+	height:30px;
+	
+}
+.list ul li:nth-of-type(1) .list1 h5{
+	border-left:1px solid gray;
+	display:block;
+	height:33px;
+	width:40px;
+	position:absolute;
+	top:0;
+	right:0;
+	text-align:center;
+}
+.list ul li:nth-of-type(1) .list1 h5 img{
+	margin-top:12px;
+}
+.list ul li:nth-of-type(1) .list1 p{
+	text-align:center;
+	margin-top:70px;
+}
+.list ul li:nth-of-type(1) .list1 p span{
+	display:inline-block;
+	width:40px;
+	text-align:center;
+	cursor:pointer;
+}
+.list{
+	position:relative;
+}
